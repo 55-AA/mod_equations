@@ -294,7 +294,7 @@ DSA(Digital Signature Algorithm)是一种签名算法。当两次签名使用相
 
 在上面得到的二元一次模线性方程组中，系数为s1、s2、r1、r2，未知数为k和x，常数项为M1、M2，模数为q。(m1, r1, s1)和(m2, r2, s2)都是已知，因此可通过求解方程得到私钥x。
 
-例如参开资料<sup>[3]</sup>中的一个实例：
+参考资料<sup>[3]</sup>中的一个例子：
 
     p = 0x8c286991e30fd5341b7832ce9fe869c0a73cf79303c2959ab677d980237abf7ecf853015c9a086c4330252043525a4fa60c64397421caa290225d6bc6ec6b122cd1da4bba1b13f51daca8b210156a28a0c3dbf17a7826f738fdfa87b22d7df990908c13dbd0a1709bbbab5f816ddba6c8166ef5696414538f6780fdce987552b
     g = 0x49874582cd9af51d6f554c8fae68588c383272c357878d7f4079c6edcda3bcbf1f2cbada3f7d541a5b1ae7f046199f8f51d72db60a2601bd3375a3b48d7a3c9a0c0e4e8a0680f7fb98a8610f042e10340d2453d3c811088e48c5d6dd834eaa5509daeb430bcd9de8aabc239d698a655004e3f0a2ee456ffe9331c5f32c66f90d
