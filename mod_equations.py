@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import gmpy2
 import copy
 
 def gcd(a, b):
@@ -37,9 +36,6 @@ def mod_inv(a, m):
     g, x, y = egcd(a, m)
     assert g == 1
     return x % m
-
-def is_prime(a):
-    return gmpy2.is_prime(a)
 
 def int2mem(x):
     """
