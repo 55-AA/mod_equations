@@ -1,6 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+'''
+Author @55-AA
+19 July, 2016
+'''
+
 import copy
 
 def gcd(a, b):
@@ -398,8 +403,7 @@ def run_test(mod, solution, matrix):
     else:
         print "times:", g.count
         print "result:"
-        for x in ret:
-            print x
+        print_matrix(ret)
 
 
 def DSA_comK():
