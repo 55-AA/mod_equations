@@ -89,11 +89,11 @@ By 55_AA @ 12:50 2016/7/19
 
 多元单模线性方程组(C)
 
-            a11*x1 + a12*x2 + ... a0m*xm ≡ b1(mod q)
-            a12*x1 + a22*x2 + ... a1m*xm ≡ b2(mod q)
-                  ...
-            a1n*x1 + an2*x2 + ... anm*xm ≡ bn(mod q)
-            其中m、n为正整数。
+        a11*x1 + a12*x2 + ... a0m*xm ≡ b1(mod q)
+        a12*x1 + a22*x2 + ... a1m*xm ≡ b2(mod q)
+              ...
+        a1n*x1 + an2*x2 + ... anm*xm ≡ bn(mod q)
+        其中m、n为正整数。
 
 可表示为：
 
