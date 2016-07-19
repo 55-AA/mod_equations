@@ -475,45 +475,11 @@ def DSA_comK():
         print "x: %x" % (x)
         print Gauss.verify_solution(ret[0])
 
-        r = int(gmpy2.powmod(g, k, p)) % q
-        s = ( int(mod_inv(k, q)) * (M1 + x*r)) % q
-        print "my signed:", hex(s)
-        print "my r:", hex(r)
-
-        from Crypto.Random import random
-        from Crypto.PublicKey import DSA
-        from Crypto.Hash import SHA
-
-        y = int(gmpy2.powmod(g, x, p))
-        key = DSA.construct((y, g, p, q, x))        
-        h = SHA.new(int2mem(0x3132333435363738)).digest()
-
-        sig = key.sign(h, k)
-        if key.verify(h,sig):
-            print "verify OK"
-        else:
-            print "Incorrect signature"
-
-        print hex(sig[0])
-        print hex(sig[1])
-
-        h = SHA.new('3132333435363738').digest()
-
-        sig = key.sign(h, k)
-        if key.verify(h,sig):
-            print "verify OK"
-        else:
-            print "Incorrect signature"
-
-        print hex(sig[0])
-        print hex(sig[1])     
-        # h = (hashlib.sha1('sss').digest())#SHA.new('3132333435363738').digest()
-
-
 
 if __name__ == "__main__":
     # DSA_comK()
 
     static_test()
+    # static_test_ex()
     # random_test(1)
     exit(0)
