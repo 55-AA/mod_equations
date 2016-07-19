@@ -396,7 +396,7 @@ def run_test(mod, solution, matrix):
         print_matrix(g.d)
         print "error_str:", g.error_str
     else:
-        print "times:", len(ret), g.count
+        print "times:", g.count
         print "result:"
         for x in ret:
             print x
@@ -459,8 +459,7 @@ def DSA_comK():
 
 if __name__ == "__main__":
     # DSA_comK()
-
-    static_test()
+    # static_test()
     # static_test_ex()
-    # random_test(1)
+    random_test(1)
     exit(0)
